@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:linearpointsview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:text="one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="one" />
+
+        <Button
+            android:text="two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="two" />
+
+
+        <Button
+            android:text="three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="three" />
+
+
+        <Button
+            android:text="four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="four" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <com.shadev.pierrebeziercircle.Demo5.BezierLinearPointsView
+            android:id="@+id/ttn"
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            linearpointsview:anim_move_duration="400"
+            linearpointsview:anim_reset_duration="200"
+            linearpointsview:anim_shake_duration="500"
+            linearpointsview:blur_radio="2"
+            linearpointsview:count="4"
+            linearpointsview:islooper="false"
+            linearpointsview:pointsize="20dp"
+            linearpointsview:pointstrokewidth="3dp"
+            linearpointsview:select_color="#aaffff"
+            linearpointsview:unselect_color="#ffaaaa" />
+    </LinearLayout>
+
+</LinearLayout>
